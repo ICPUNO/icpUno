@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "uno_icp_contracts_backend": {
+      "candid": "src/uno_icp_contracts_backend/uno_icp_contracts_backend.did",
+      "package": "uno_icp_contracts_backend",
+      "type": "rust"
+    },
+    "uno_icp_contracts_frontend": {
+      "dependencies": [
+        "uno_icp_contracts_backend"
+      ],
+      "source": [
+        "src/uno_icp_contracts_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "uno_icp_contracts_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
